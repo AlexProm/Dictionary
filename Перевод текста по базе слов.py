@@ -73,35 +73,35 @@ def File_Open():
 
 def Level():
     words = len(Original_Word)
-    if words < 1000:
+    if words < 2000:
         level = 'A1 Beginner'
-    elif words < 1500:
-        level = 'A1 Elementary'
-    elif words < 2000:
-        level = 'A2 Pre-Intermediate'
     elif words < 3000:
-        level = 'B1 Intermediate'
+        level = 'A1 Elementary'
     elif words < 4000:
-        level = 'B2 Upper-Intermediate'
+        level = 'A2 Pre-Intermediate'
     elif words < 6000:
+        level = 'B1 Intermediate'
+    elif words < 8000:
+        level = 'B2 Upper-Intermediate'
+    elif words < 12000:
         level = 'C1 Advanced'
     else: level = 'C2 Proficient'
     return level
 
 def LevelUp():
     words = len(Original_Word)
-    if words < 1000:
-        levelup = 'До уровня A1 Elementary, осталось {0} слов, или {1:2.2f}% от требуемого'.format(1000 - words, words/1000)
-    elif words < 1500:
-        levelup = 'До уровня A2 Pre-Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(1500 - words, words/1500)
-    elif words < 2000:
-        levelup = 'До уровня B1 Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(2000 - words, words/2000)
+    if words < 2000:
+        levelup = 'До уровня A1 Elementary, осталось {0} слов, или {1:2.2f}% от требуемого'.format(2000 - words, words/2000)
     elif words < 3000:
-        levelup = 'До уровня B2 Upper-Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(3000 - words, words / 3000)
+        levelup = 'До уровня A2 Pre-Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(3000 - words, words/3000)
     elif words < 4000:
-        levelup = 'До уровня C1 Advanced, осталось {0} слов, или {1:2.2f}% от требуемого'.format(4000 - words, words /4000)
+        levelup = 'До уровня B1 Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(4000 - words, words/4000)
     elif words < 6000:
-        levelup = 'До уровня C2 Proficient, осталось {0} слов, или {1:2.2f}% от требуемого'.format(6000 - words, words / 6000)
+        levelup = 'До уровня B2 Upper-Intermediate, осталось {0} слов, или {1:2.2f}% от требуемого'.format(6000 - words, words/6000)
+    elif words < 8000:
+        levelup = 'До уровня C1 Advanced, осталось {0} слов, или {1:2.2f}% от требуемого'.format(8000 - words, words/8000)
+    elif words < 12000:
+        levelup = 'До уровня C2 Proficient, осталось {0} слов, или {1:2.2f}% от требуемого'.format(12000 - words, words/12000)
     else: levelup = 'Ты C2 Proficient, и этим всё сказанно... Учи новый язык или не парься'
     return levelup
 
