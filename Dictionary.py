@@ -298,4 +298,3 @@ def Safe_Dictionary_Exel_DB():
 
 Slovar = list(Open_Exel_DB())
 Dictionary()
-os.system('Перевод текста по базе слов.py')
